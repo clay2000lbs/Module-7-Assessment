@@ -35,11 +35,29 @@ function getSizedArray(size){
 
 
 const tinyArray = getSizedArray(10);
-const smallArray = getSizedArray(100);
-const mediumArray = getSizedArray(1000);
-const largeArray = getSizedArray(10000);
-const extraLargeArray = getSizedArray(100000);
+//Results for the tinyArray
+//insert 34.1 μs
+//append 81.8 μs
 
+const smallArray = getSizedArray(100);
+//Results for the smallArray
+//insert 47.9 μs
+//append 94.4 μs
+
+const mediumArray = getSizedArray(1000);
+//Results for the mediumArray
+//insert 178.3 μs
+//append 135.9 μs
+
+const largeArray = getSizedArray(10000);
+//Results for the largeArray
+//insert 8.1133 ms
+//append 559.2 μs
+
+const extraLargeArray = getSizedArray(100000);
+//Results for the extraLargeArray
+//insert 995.8275 ms
+//append 3.4874 ms
 
 
 // How long does it take to double every number in a given 
